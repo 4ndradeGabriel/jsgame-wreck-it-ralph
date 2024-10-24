@@ -1,0 +1,166 @@
+.container {
+    background-image: url(../images/wall.png);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-bottom: 5px solid #ffd700;
+}
+
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.menu h2:first-child {
+    color: #ff0000;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    min-height: 150px;
+    min-height: 150px;
+    border: 1px solid #000000;
+    background-color: #1aeaa5;
+}
+
+.enemy {
+    background-image: url('../images/ralph.png');
+    background-size: cover;
+}
+
+.ralph-hit {
+    background-image: url('../images/ralph-hit.png');
+    background-size: cover;
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-lives img {
+    height: 150px;
+}
+
+.panel .panel-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.game-area {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+.start-screen {
+    background: #333;
+    padding: 170px 0px !important;
+    background: url('../images/game-logo.png') center 20px #333 no-repeat;
+    background-size: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    display: block;
+    width: 1000px;
+    height: 600px;
+    background-color: #6ea5e5;
+    margin: 0px auto;
+    border: 5px solid #000;
+    background: #fff;
+    font-size: 24px;
+    padding: 0px 28px !important;
+    text-transform: uppercase;
+}
+
+.welcome h1 {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.welcome p {
+    margin-top: 1rem;
+
+}
+
+.welcome ul {
+    font-size: 16px;
+    list-style-type: "»";
+    margin: 1rem;
+    padding-left: 0.8rem;
+}
+
+button {
+    border: 2px solid #dbcf4c;
+    color: #dbcf4c;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #333 !important;
+    margin: 24px auto;
+    display: block;
+}
+
+button:hover {
+    border: 2px solid #f1615e;
+    color: #f1615e;
+    background: #666 !important;
+}
+
+.score-screen {
+    display: block;
+    width: 37.5rem;
+    padding: 2rem;
+    margin: 0px auto;
+    border: 5px solid #000;
+    background: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#final-score {
+    color: #ff0000;
+}

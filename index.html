@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wreck-it Ralph Game</title>
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="start-screen" class="start-screen">
+        <div class="welcome">
+            <h1>Wreck-it Ralph</h1>
+            <h2>Como jogar</h2>
+            <p>O principal objetivo do jogo é impedir o Ralph de quebrar um maximo de 3 janelas, você pode impedi-lo
+                clicando nele antes que ele mude de lugar.</p>
+            <p>O jogo dura 60 segundos, faça o maximo de pontos que puder.</p>
+            <p>O jogo termina quando você perde as todas as suas 3 vidas.</p>
+            <p>Instruções:</p>
+            <ul>
+                <li>Clique em Ralph antes que ele quebre as janelas.</li>
+                <li>Não clicar a tempo resulta na perca de 1 vida.</li>
+                <li>Perder todas as vidas encerra o jogo.</li>
+            </ul>
+        </div>
+        <button class="start-game" id="start-game-btn">Iniciar Jogo</button>
+
+    </div>
+    <main id="game-screen" class="container" style="display: none;">
+
+        <div class="menu">
+            <div class="menu-time">
+                <h2>Time Left</h2>
+                <h2 id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2>Your Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img src="./src/images/player.png" alt="Logo player lives">
+                <h2 id="lives">x3</h2>
+            </div>
+        </div>
+
+        <div class="game-screen">
+            <div class="game-area">
+
+                <div class="panel">
+                    <div class="panel-row">
+                        <div class="square" id="1"></div>
+                        <div class="square" id="2"></div>
+                        <div class="square" id="3"></div>
+                    </div>
+                    <div class="panel-row">
+                        <div class="square" id="4"></div>
+                        <div class="square" id="5"></div>
+                        <div class="square" id="6"></div>
+                    </div>
+                    <div class="panel-row">
+                        <div class="square" id="7"></div>
+                        <div class="square" id="8"></div>
+                        <div class="square" id="9"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="game-over-screen" class=" start-screen screen" style="display: none;">
+        <div class="score-screen">
+            <h2>Game Over!</h2>
+            <p>Sua pontuação foi: <span id="final-score"></span></p>
+        </div>
+        <button id="restart-game-btn">Jogar Novamente</button>
+    </div>
+
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+
+</html>
